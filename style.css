@@ -7,7 +7,7 @@
   margin: 0px;
   padding: 0px;
 }
-body {
+header {
   background-color: #3700ff;
 }
 nav {
@@ -16,10 +16,10 @@ nav {
   flex-direction: row;
   justify-content: right;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   background-color: #3700ff;
   color: #ffffff;
-  padding: 17px;
+  padding: 22px;
 }
 .btn {
   --color: #ffffff;
@@ -90,9 +90,33 @@ a:hover{
   color: black;
 }
 /* .... nav bar completed....  */
-.header-text{
+.header-text-main{
 display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 40px;
+/* flex-direction: row; */
+/* justify-content: center; */
+background-color: #3700ff;
+}
+.header-image{
+  position: absolute;
+  right: 0px;
+  top: 107px;
+}
+.header-text{
+  margin-top: 30px;
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 153px;
+}
+
+/* <!-- Companies --> */
+.companies,.company-items{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  margin-left:30px;
+  text-decoration: none;
+  color:#000000;
+  font-weight: bolder;
+  font-size: 23px;
+  margin-top: 12px;
 }
