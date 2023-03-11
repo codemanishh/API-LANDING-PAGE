@@ -7,7 +7,7 @@
   margin: 0px;
   padding: 0px;
 }
-body {
+header {
   background-color: #3700ff;
 }
 nav {
@@ -90,9 +90,254 @@ a:hover{
   color: black;
 }
 /* .... nav bar completed....  */
-.header-text{
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 40px;
+.header-text{    
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 96px;
+}
+.header-image{
+  position: absolute;
+    right: 0px;
+    top: 99px;
+}
+header>div>h2{
+  font-size: 40px;
+  color: #ffffff;
+}
+header>div>p{
+color: #b3afaf;
+}
+
+/* ............ till <HEADER> COMPLETED ----------- */
+.companies{
+  display: flex;
+    flex-direction: row;
+    gap: 67px;
+    font-size: 23px;
+    padding: 33px;
+}
+.company-items{
+  text-decoration: none;
+color: black;
+font-weight: bolder;
+}
+/* <!--      Companies is completed   --> */
+
+/* <!--     API Section started        --> */
+.api{
+  padding: 50px;
+  font-weight: bolder;
+}
+.cards{
+  display: flex;
+    flex-direction: row;
+    gap: 34px;
+    padding: 23px;
+}
+.card:hover{
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 23px; 
+  border-radius: 20px;
+}
+div>div>p{
+  color: #6e6e6e;
+  font-style:normal;
+}
+
+/* <!-- Blog section starts---- --> */
+.blog-heading{
+margin-left: 78px;
+}
+.blog-cards{
+  display: flex;
+    flex-direction: row;
+    padding: 79px;
+    gap: 178px;
+    position: relative;
+}
+.blog-card{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 10px;
+  
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+}
+.blog-content{
+  display: flex;
+  flex-direction:column;
+}
+.new-btn{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: ;
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.blog-cards-new{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+h6{
+  color: #3700ff;
+}
+
+/* <!-- FAQ SECTION code stated     -------> */
+.faq-section{
+  display: flex;
+  flex-direction: row;
+  background-color: #e6eff8;
+  justify-content: center;
+  gap: 186px;
+}
+.faq-content{
+  padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-left: 90px;
+   
+}
+.new-id{
+  color: #6e6e6e;
+  font-style: normal;
+  font-size: 12px;
+}
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #000000;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+/* <!-- Download SECTIONS STARTED --------> */
+.download-section{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 256px;
+    padding: 111px
+}
+input{
+  position: relative;
+    width: 367px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #e6eff8;
+}
+.new-download{
+  position: absolute;
+    border-radius: 112px;
+    right: 241px;
+}
+  /* ----- last footer sections started ---- >>  */
+.footer-section{
+  display: flex;
+  flex-direction: row;
+  background-color: #3700ff;
+  justify-content: center;
+  gap:400px 
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #b3afaf;
+  gap: 30px;
+}
+.logos-list{
+  
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #b3afaf;
+  gap: 30px;
+}
+.footer-left{
+  padding: 60px;
+}
+.footer-right{
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footerr-right{
+  display: flex;
+  flex-direction: row;
+  gap:24px;
 }
